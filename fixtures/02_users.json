@@ -1,0 +1,42 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$VkRQ1xcZL6EkTgMC9p5uW9$Bd4xt5XQVLBUaC76jnOIEj9GVWnxAeD6c+xaqxy7ZjA=",
+      "last_login": "2024-06-10T17:38:41.900Z",
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-06-10T17:34:34.469Z",
+      "email": "admin@gmail.com",
+      "first_name": "Максим",
+      "last_name": "Петров",
+      "phone": "+7(999) 765-43-21",
+      "city": "Самара",
+      "avatar": "users/no_avatar.png",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$yl7V4gNN3b5ya2n14SJwKe$+RAlA4p2P6E/+Ghwi2Bi26dtrgCmtzAWTwERv/atmmE=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-10T18:00:06.662Z",
+      "email": "grigor_rst24@gmail.com",
+      "first_name": "Григорий",
+      "last_name": "Максимов",
+      "phone": "+7(989) 755-43-11",
+      "city": "Ростов",
+      "avatar": "users/no_avatar.png",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

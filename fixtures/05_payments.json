@@ -1,0 +1,158 @@
+[
+  {
+    "model": "users.payments",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "payment_date": "2024-06-10T17:55:45.489Z",
+      "paid_course": 1,
+      "paid_lesson": null,
+      "payment_amount": 100000,
+      "payment_method": "Карта"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "payment_date": "2024-06-10T17:56:02.722Z",
+      "paid_course": 2,
+      "paid_lesson": null,
+      "payment_amount": 120000,
+      "payment_method": "Карта"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "payment_date": "2024-06-10T17:56:19.638Z",
+      "paid_course": 3,
+      "paid_lesson": null,
+      "payment_amount": 150000,
+      "payment_method": "Наличные"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "payment_date": "2024-06-10T17:56:38.002Z",
+      "paid_course": null,
+      "paid_lesson": 7,
+      "payment_amount": 5000,
+      "payment_method": "Наличные"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "payment_date": "2024-06-10T17:56:55.963Z",
+      "paid_course": null,
+      "paid_lesson": 4,
+      "payment_amount": 10000,
+      "payment_method": "Наличные"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "payment_date": "2024-06-10T17:57:29.159Z",
+      "paid_course": null,
+      "paid_lesson": 1,
+      "payment_amount": 5000,
+      "payment_method": "Карта"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 7,
+    "fields": {
+      "user": 2,
+      "payment_date": "2024-06-10T18:00:35.675Z",
+      "paid_course": null,
+      "paid_lesson": 2,
+      "payment_amount": 6000,
+      "payment_method": "Карта"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 8,
+    "fields": {
+      "user": 2,
+      "payment_date": "2024-06-10T18:00:57.122Z",
+      "paid_course": null,
+      "paid_lesson": 5,
+      "payment_amount": 12000,
+      "payment_method": "Наличные"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 9,
+    "fields": {
+      "user": 2,
+      "payment_date": "2024-06-10T18:01:18.178Z",
+      "paid_course": null,
+      "paid_lesson": 8,
+      "payment_amount": 20000,
+      "payment_method": "Наличные"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 10,
+    "fields": {
+      "user": 2,
+      "payment_date": "2024-06-10T18:01:34.345Z",
+      "paid_course": null,
+      "paid_lesson": 3,
+      "payment_amount": 10000,
+      "payment_method": "Карта"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 11,
+    "fields": {
+      "user": 2,
+      "payment_date": "2024-06-10T18:02:00.642Z",
+      "paid_course": null,
+      "paid_lesson": 6,
+      "payment_amount": 16000,
+      "payment_method": "Карта"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 12,
+    "fields": {
+      "user": 2,
+      "payment_date": "2024-06-10T18:02:21.452Z",
+      "paid_course": null,
+      "paid_lesson": 9,
+      "payment_amount": 21000,
+      "payment_method": "Карта"
+    }
+  },
+  {
+    "model": "users.payments",
+    "pk": 13,
+    "fields": {
+      "user": 2,
+      "payment_date": "2024-06-10T18:02:38.890Z",
+      "paid_course": 3,
+      "paid_lesson": null,
+      "payment_amount": 130000,
+      "payment_method": "Наличные"
+    }
+  }
+]
