@@ -1,7 +1,9 @@
 from rest_framework import generics
 from rest_framework.permissions import AllowAny
 from users.models import User, Payments
-from users.serializers import UserSerializer, UserDetailSerializer, PaymentsSerializer, UserRegisterSerializer
+from users.permissions import IsOwnerOrReadOnly
+from users.serializers import UserSerializer, UserDetailSerializer, PaymentsSerializer, UserRegisterSerializer, \
+    UserNoOwnerSerializer
 from rest_framework.filters import OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
 
@@ -17,8 +19,13 @@ class UserCreateAPIView(generics.CreateAPIView):
 
 
 class UserRetrieveApiView(generics.RetrieveAPIView):
-    serializer_class = UserDetailSerializer
     queryset = User.objects.all()
+
+    def get_serializer_class(self):
+        if self.request.user == self.get_object():
+            return UserDetailSerializer
+        else:
+            return UserNoOwnerSerializer
 
 
 class UserListAPIView(generics.ListAPIView):
@@ -29,6 +36,7 @@ class UserListAPIView(generics.ListAPIView):
 class UserUpdateAPIView(generics.UpdateAPIView):
     serializer_class = UserSerializer
     queryset = User.objects.all()
+    permission_classes = [IsOwnerOrReadOnly]
 
 
 class UserDestroyAPIView(generics.DestroyAPIView):

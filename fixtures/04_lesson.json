@@ -7,7 +7,8 @@
       "description": "В данном модуле мы познакомимся с основами языка Python",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 1
+      "course": 1,
+      "owner": 1
     }
   },
   {
@@ -18,7 +19,8 @@
       "description": "В данном модуле мы познакомимся с основами языка Java",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 2
+      "course": 2,
+      "owner": 2
     }
   },
   {
@@ -29,7 +31,8 @@
       "description": "В данном модуле мы познакомимся с основами языка Kotlin",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 3
+      "course": 3,
+      "owner": 4
     }
   },
   {
@@ -40,7 +43,8 @@
       "description": "В данном модуле мы углубимся в изучение языка Python и будем развивать свои навыки дальше переходя к более сложным концепциям.",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 1
+      "course": 1,
+      "owner": 1
     }
   },
   {
@@ -51,7 +55,8 @@
       "description": "В данном модуле мы углубимся в изучение языка Java и будем развивать свои навыки дальше переходя к более сложным концепциям.",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 2
+      "course": 2,
+      "owner": 2
     }
   },
   {
@@ -62,7 +67,8 @@
       "description": "В данном модуле мы углубимся в изучение языка Kotlin и будем развивать свои навыки дальше переходя к более сложным концепциям.",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 3
+      "course": 3,
+      "owner": 4
     }
   },
   {
@@ -73,7 +79,8 @@
       "description": "В данном модуле мы будет развиваться дальше изучим много новых библиотек и фреймворков для Python.",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 1
+      "course": 1,
+      "owner": 1
     }
   },
   {
@@ -84,7 +91,8 @@
       "description": "В данном модуле мы будет развиваться дальше изучим много новых библиотек и фреймворков для Java.",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 2
+      "course": 2,
+      "owner": 2
     }
   },
   {
@@ -95,7 +103,8 @@
       "description": "В данном модуле мы будет развиваться дальше изучим много новых библиотек и фреймворков для Kotlin.",
       "preview": "lesson/default_lesson.jpg",
       "url": null,
-      "course": 3
+      "course": 3,
+      "owner": 4
     }
   }
 ]

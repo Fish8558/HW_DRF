@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$720000$VkRQ1xcZL6EkTgMC9p5uW9$Bd4xt5XQVLBUaC76jnOIEj9GVWnxAeD6c+xaqxy7ZjA=",
-      "last_login": "2024-06-10T17:38:41.900Z",
+      "last_login": "2024-06-14T16:34:01.359Z",
       "is_superuser": true,
       "is_staff": true,
       "is_active": true,
@@ -28,12 +28,34 @@
       "is_superuser": false,
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2024-06-10T18:00:06.662Z",
-      "email": "grigor_rst24@gmail.com",
+      "date_joined": "2024-06-10T18:00:06Z",
+      "email": "moderator-user@gmail.com",
       "first_name": "Григорий",
       "last_name": "Максимов",
       "phone": "+7(989) 755-43-11",
       "city": "Ростов",
+      "avatar": "users/no_avatar.png",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$KIDl5ZWO5AIDnSxSwjTFZ1$78tog5XXHtj4d5Mg9M11oIV2eWfL4gRfnwoWBeOxrx0=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-14T15:58:22Z",
+      "email": "simple-user@gmail.com",
+      "first_name": "Игнат",
+      "last_name": "Иванов",
+      "phone": null,
+      "city": null,
       "avatar": "users/no_avatar.png",
       "groups": [],
       "user_permissions": []
