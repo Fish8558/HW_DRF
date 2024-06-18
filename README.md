@@ -35,6 +35,8 @@
     # Django
     SECRET_KEY=secret_key - секретный ключ django проекта
     DEBUG=True - режим DEBUG
+    # Stripe API
+    STRIPE_API_KEY= - секретный ключ от API Stripe
     ```
 
 
