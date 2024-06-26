@@ -40,8 +40,9 @@ class Lesson(models.Model):
 
 class Subscription(models.Model):
     """Модель подписки"""
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name="пользователь")
-    course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name="курс")
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='subscription',
+                             verbose_name="пользователь")
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='subscription', verbose_name="курс")
 
     def __str__(self):
         return f"{self.user} | {self.course}"
