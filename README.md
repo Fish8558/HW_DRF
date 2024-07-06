@@ -7,6 +7,7 @@
 - DRF
 - Celery
 - Redis
+- Docker
 
 #### Инструкция для запуска проекта:
 
@@ -30,12 +31,12 @@
 - переименовать файл .env.sample в .env и заполнить поля
     ```text
     # Postgresql
-    PG_ENGINE="postgresql_psycopg2" - используем psycopg2
-    PG_NAME="db_name" - название вашей БД
-    PG_PGUSER="postgres" - имя пользователя БД
-    PG_PASSWORD="secret" - пароль пользователя БД
-    PG_HOST="host" - можно указать "localhost" или "127.0.0.1"
-    PG_PORT=port - указываете порт для подключения по умолчанию 5432
+    POSTGRES_ENGINE="postgresql_psycopg2" - используем psycopg2
+    POSTGRES_DB="db_name" - название вашей БД
+    POSTGRES_PGUSER="postgres" - имя пользователя БД
+    POSTGRES_PASSWORD="secret" - пароль пользователя БД
+    POSTGRES_HOST="host" - можно указать "localhost" или "127.0.0.1"
+    POSTGRES_PORT=port - указываете порт для подключения по умолчанию 5432
     
     # Django
     SECRET_KEY=secret_key - секретный ключ django проекта
@@ -67,7 +68,9 @@ python -Xutf8 manage.py loaddata fixtures/*.json
 
 ##### Запуск проекта
 
-- запустите проект и перейдите по адресу
+>Для локального запуска проекта 
+
+- введите команду и перейдите по адресу:
 
 ```text
 python manage.py runserver
@@ -77,10 +80,20 @@ http://127.0.0.1:8000
 - для работы с эндпоинтами используйте [Postman](https://www.postman.com/)
 
 - для запуска worker Celery используйте команду
-  ```text
-  celery -A config worker -l INFO
-  ```
+```text
+celery -A config worker -l INFO
+```
 - для запуска beat Celery используйте команду
+```text
+celery -A config beat -l INFO -S django
+```
+
+>Для запуска контейнеров через Docker:
+
+- установите Docker себе в систему, перейдя по [ссылке](https://docs.docker.com/engine/install/)
+
+- для сборки проекта и запуска введите команду:
   ```text
-  celery -A config beat -l INFO -S django
+  docker-compose up -d --build
   ```
+- перейдите по адресу: [http://127.0.0.1:8000](http://127.0.0.1:8000)
